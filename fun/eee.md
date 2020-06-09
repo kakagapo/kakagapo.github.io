@@ -1,11 +1,14 @@
-Inverter:
-=========
-- Converts DC to AC
-- Types: 
-  ------
-    1) entirely electronic 
-    2) mechanical(rotary components) plus some electronic components
-- Device converting AC to DC is called a rectifier.
+### Electrical components:
+- Op amp
+- Flip flop
+- Diode
+- Inverter
+    - Converts DC to AC
+    - Types: 
+        - entirely electronic 
+        - mechanical(rotary components) plus some electronic components
+- Rectifier
+    - Converts AC to DC
 
 Different types of batteries:
 =============================

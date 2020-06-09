@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Common commands | Kakagapo</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<meta name="generator" content="Jekyll v3.8.7" />
 <meta property="og:title" content="Common commands" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Just a dumping ground for things I learn everyday or I need for work." />
@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://localhost:4000/commands" />
 <meta property="og:site_name" content="Kakagapo" />
 <script type="application/ld+json">
-{"description":"Just a dumping ground for things I learn everyday or I need for work.","@type":"WebPage","url":"http://localhost:4000/commands","headline":"Common commands","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/commands","description":"Just a dumping ground for things I learn everyday or I need for work.","@type":"WebPage","headline":"Common commands","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kakagapo" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/book-list">Book List</a><a class="page-link" href="/commands">Common commands</a><a class="page-link" href="/cs">Computer Science</a><a class="page-link" href="/encoding">Encoding</a><a class="page-link" href="/jekyll">Jekyll</a><a class="page-link" href="/kids-coding">Kids coding</a><a class="page-link" href="/open-src">Open source code and data</a><a class="page-link" href="/radio">Radio</a></div>
+        <div class="trigger"><a class="page-link" href="/book-list">Book List</a><a class="page-link" href="/commands">Common commands</a><a class="page-link" href="/cs">Computer Science</a><a class="page-link" href="/reading_log/web/d3">D3.js</a><a class="page-link" href="/encoding">Encoding</a><a class="page-link" href="/jekyll">Jekyll</a><a class="page-link" href="/kids-coding">Kids coding</a><a class="page-link" href="/open-src">Open source</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -40,12 +40,27 @@
   </header>
 
   <div class="post-content">
-    <h1 id="windows-commands-used-to-mitigate-network-issues">Windows commands used to mitigate network issues:</h1>
+    <h2 id="windows-commands-used-to-mitigate-network-issues">Windows commands used to mitigate network issues:</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>netsh int ip reset all
 netsh winsock reset all
 ipconfig /flushdns
 ipconfig /release
 Route -f
+</code></pre></div></div>
+
+<h2 id="git-commands">Git commands:</h2>
+<h3 id="to-get-all-local-configs">To get all local configs:</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --list --local
+</code></pre></div></div>
+<h3 id="to-set-local-configs">To set local configs:</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --local user.email "429159+kakagapo@users.noreply.github.com"
+git config --local user.name "karna"
+</code></pre></div></div>
+<h3 id="to-rebase-from-the-very-first-commit">To rebase from the very first commit:</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase -i --root
+</code></pre></div></div>
+<h3 id="to-amend-the-author-info">To amend the author info:</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend --author="karna &lt;429159+kakagapo@users.noreply.github.com&gt;"
 </code></pre></div></div>
 
   </div>
